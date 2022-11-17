@@ -9,7 +9,7 @@ function msnPush(){
     Push.Permission.request();
     Push.create('Pokedex',{
         body: 'Nuevos pokemon',
-        icon: '/pokedex.png',
+        icon: './pokedex.png',
         timeout: 150000,
         vibrate:[100,100,100],
         onClick: function(){

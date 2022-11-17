@@ -10,9 +10,11 @@ const AS_STATIC =[
     './index.html',
     './blob.svg',
     './style.css',
+    './pokedex.png',
     './js/app.js',
     './js/main.js',
-    './js/sw-utils.js'
+    './js/sw-utils.js',
+    './js/push.min.js'
 ];
 
 const AS_INMUTABLE=[
