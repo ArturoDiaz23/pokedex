@@ -89,6 +89,10 @@ h1 {
   transform-style: preserve-3d;
 }
 
+.flip-card{
+  height: 200px;
+}
+
 .flip-card:hover .card-container {
   transform: rotateY(180deg);
 }
