@@ -7,12 +7,7 @@ const CACHE_INMUTABLE = 'inmutable-v1';
 
 const AS_STATIC =[
     './',
-    './index.html',
-    './blob.svg',
-    './style.css',
-    '/js/app.js',
-    '/js/main.js',
-    '/js/sw-utils.js'
+    './index.html'
 ];
 
 const AS_INMUTABLE=[
