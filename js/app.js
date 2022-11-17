@@ -1,7 +1,7 @@
 //registro de service worker
 if(navigator.serviceWorker){
     navigator.serviceWorker.register('./sw.js')
-    console.log('hola:sw')
+    //console.log('hola:sw')
 }
 
 //notificaciones
