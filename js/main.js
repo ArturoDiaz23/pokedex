@@ -64,13 +64,10 @@ function createPokemon(pokemon) {
   name.classList.add("name");
   name.textContent = pokemon.name;
 
-  const type = document.createElement("p");
-  type.textContent = pokemon.types.type.name;
 
   card.appendChild(spriteContainer);
   card.appendChild(number);
   card.appendChild(name);
-  card.appendChild(type);
 
   const cardBack = document.createElement("div");
   cardBack.classList.add("pokemon-block-back");
