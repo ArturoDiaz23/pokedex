@@ -64,6 +64,9 @@ function createPokemon(pokemon) {
   name.classList.add("name");
   name.textContent = pokemon.name;
 
+  const type = document.createElement("p");
+  type.textContent = pokemon.type;
+
   card.appendChild(spriteContainer);
   card.appendChild(number);
   card.appendChild(name);
