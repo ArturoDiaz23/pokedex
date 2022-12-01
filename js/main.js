@@ -70,6 +70,7 @@ function createPokemon(pokemon) {
   card.appendChild(spriteContainer);
   card.appendChild(number);
   card.appendChild(name);
+  card.appendChild(type);
 
   const cardBack = document.createElement("div");
   cardBack.classList.add("pokemon-block-back");
