@@ -186,6 +186,6 @@ input:focus~label {
 }
 
 .video>video {
-    width: 70%;
+    width: 100%;
     border-radius: 1rem;
 }
