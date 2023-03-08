@@ -1,0 +1,191 @@
+@import url(root.css);
+
+* {
+    box-sizing: border-box;
+}
+
+/* ------------ navegación ---------------*/
+
+nav {
+    margin-bottom: 50px;
+}
+
+div.container-fluid {
+    padding: 0 80px;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.logo {
+    width: 100px;
+    border-radius: var(--br-25rem);
+
+}
+
+.nav-link {
+    color: var(--bs-light-rgba);
+}
+
+.nav-link:hover {
+    color: var(--bs-danger-text);
+}
+
+.nav-link.nav-link-active {
+    color: var(--bs-danger-text);
+}
+
+
+.encabezado {
+    margin-bottom: 20px;
+}
+
+/** -------------formularios------------- **/
+.div-form {
+    margin-bottom: 50px;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-container {
+    width: 30%;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.input_form {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--bs-outline);
+    border-radius: var(--br-25rem);
+    font-size: 15px;
+    outline: none;
+}
+
+.input_form:focus {
+    border: 1.8px solid var(--bs-danger);
+}
+
+input:valid~label,
+input:focus~label {
+    font-size: 0.75em;
+    color: var(--bs-danger);
+    top: -.7rem;
+    background: #fff;
+    transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+}
+
+.label_form {
+    color: #999;
+    padding: 2px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+    pointer-events: none;
+}
+
+.btn_form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form>.btn {
+    width: 30%;
+    font-size: 18px;
+}
+
+/***************************/
+.sesionOut {
+    padding: 8px 5px;
+    color: var(--bs-danger-text);
+    background-color: var(--bs-danger-bg-subtle);
+    border: 1px solid var(--bs-danger-border-subtle);
+    border-radius: var(--br-25rem);
+}
+
+.sesionOut:hover {
+    color: var(--bs-danger-text);
+    background-color: var(--bs-danger-bg-subtle);
+}
+
+/********  card data, info, form *******************/
+/*---------------------------------------------------
+//---------------------------------------------------*/
+.card_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cf_db {
+    display: block !important;
+}
+
+.cf_di {
+    width: 100%;
+}
+
+/********  media screen Card_form  *******************/
+/*---------------------------------------------------
+//---------------------------------------------------*/
+@media screen and (max-width: 443px) {
+    .card_info {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 48px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+}
+
+/********  media screen  *******************/
+/*---------------------------------------------------
+//---------------------------------------------------*/
+@media screen and (max-width: 1090px) {
+    div.container-fluid {
+        padding: 0 50px;
+    }
+
+    .btn_form>.btn {
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div.container-fluid {
+        padding: 0 12px;
+    }
+}
+
+
+/*__________________________*/
+/*----------------------------*/
+.contenedorQR {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/********  video Scanner  *******************/
+/*---------------------------------------------------*/
+.video {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.video>video {
+    width: 70%;
+    border-radius: 1rem;
+}
