@@ -52,10 +52,21 @@
         </div>
         <!-- tabla-->
     </div>
+    <div>
+      <p>Nombre: Iván Arturo Díaz Ramírez<br>
+      Municipio: Villahermosa<br>
+      Estado: Tabasco<br>
+      Fecha: <span id="fecha"></span></p>
+    </div>
+    
 </body>
 <script src="bootstrap.bundle.js"></script>
 <script src="instascan.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
 <script>
+let f = document.getElementById('fecha');
+
+f.innerText = moment().format('L');
     let sonido = new Audio("barcode.wav");
     let scanner = new Instascan.Scanner({
         video: document.getElementById('preview'),
