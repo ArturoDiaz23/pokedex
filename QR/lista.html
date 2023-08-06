@@ -14,14 +14,14 @@
 <body>
     <div class="container m-5">
         <h2>Lista de Asitencia</h2>
-        <div class="card_info">
+      <!--  <div class="card_info">
             <div class="video">
                 <video id="preview"></video>
             </div>
             <div>
                 <p>No. Empleado: <span id="codigo"></span></p>
             </div>
-        </div>
+        </div> -->
         <!-- tabla-->
         <div class="card mt-5 mb-5 p-3">
         <p>Nombre: Iván Arturo Díaz Ramírez<br>
@@ -44,6 +44,7 @@
 let f = document.getElementById('fecha');
 f.innerText = moment().format('DD/MM/YYYY');
 
+/*
     let sonido = new Audio("barcode.wav");
     let scanner = new Instascan.Scanner({
         video: document.getElementById('preview'),
@@ -66,7 +67,7 @@ f.innerText = moment().format('DD/MM/YYYY');
         console.log(resp);
         let codigo = document.getElementById('codigo')
         codigo.innerHTML = resp;
-    })
+    }) */
 </script>
 
 </html>
