@@ -40,7 +40,8 @@
 <script src="instascan.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
 <script>
-
+let texto=document.getElementById("texto");
+let btn = document.getElementById("btn");
 moment.lang('es', {
   months: 'Enero_Febrero_Marzo_Abril_Mayo_Junio_Julio_Agosto_Septiembre_Octubre_Noviembre_Diciembre'.split('_'),
   monthsShort: 'Enero._Feb._Mar_Abr._May_Jun_Jul._Ago_Sept._Oct._Nov._Dec.'.split('_'),
@@ -52,6 +53,16 @@ moment.lang('es', {
 
 let f = document.getElementById('fecha');
 f.innerText = moment().format('DD/MM/YYYY');
+
+btn.addEventListener("click",()=>{
+navegator.clipboard
+.writeText(texto.textContent)
+.then(()=>{
+alerta("copiado")
+}).catch(()=>{
+alert(nel perro)
+})
+})
 
 /*
     let sonido = new Audio("barcode.wav");
