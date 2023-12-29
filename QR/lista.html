@@ -55,12 +55,12 @@ let f = document.getElementById('fecha');
 f.innerText = moment().format('DD/MM/YYYY');
 
 
-let texto = document.getElementById("texto");
-let btn = document.getElementById("btn");
+const texto = document.getElementById("texto");
+const btn = document.getElementById("btn");
 
 btn.addEventListener("click",()=>{
-navegator.clipboard
-.writeText(texto.innerText)
+navigator.clipboard
+.writeText(texto.textContent)
 .then(()=>{
 alert("copiado")
 }).catch(()=>{
