@@ -54,18 +54,7 @@ moment.lang('es', {
 let f = document.getElementById('fecha');
 f.innerText = moment().format('DD/MM/YYYY');
 
-let texto = document.getElementById("texto");
-let btn = document.getElementById("btn");
 
-btn.addEventListener("click",()=>{
-navegator.clipboard
-.writeText(texto.innerText)
-.then(()=>{
-alerta("copiado")
-}).catch(()=>{
-alert(nel perro)
-})
-})
 
 /*
     let sonido = new Audio("barcode.wav");
