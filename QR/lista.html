@@ -67,7 +67,7 @@ navigator.clipboard.writeText(texto.innerText);
     let scanner = new Instascan.Scanner({
         video: document.getElementById('preview'),
         scanPeriod: 5,
-        mirror: true
+       mirror: true
     });
 
     Instascan.Camera.getCameras().then(function (cameras) {
