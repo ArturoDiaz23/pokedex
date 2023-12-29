@@ -59,13 +59,7 @@ const texto = document.getElementById("texto");
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click",()=>{
-navigator.clipboard
-.writeText(texto.textContent)
-.then(()=>{
-alert("copiado")
-}).catch(()=>{
-alert(nel perro)
-})
+navigator.clipboard.writeText(texto.textContent).then(()=>{alert("copiado")}).catch(()=>{alert(nel perro)})
 })
 
 /*
