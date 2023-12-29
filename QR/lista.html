@@ -58,9 +58,9 @@ f.innerText = moment().format('DD/MM/YYYY');
 const texto = document.getElementById("texto");
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click",()=>{
-navigator.clipboard.writeText(texto.textContent).then(()=>{alert("copiado")}).catch(()=>{alert(nel perro)})
-})
+btn.addEventListener('click', ()=>{
+navigator.clipboard.writeText(texto.innerText);
+});
 
 /*
     let sonido = new Audio("barcode.wav");
