@@ -40,7 +40,7 @@
 <h3>Tablas de multiplicar</h3>
 <input type="number" id="num_table">
 <button id="btn_table" class=" btn btn-primary">Imprimir </button>
-<p id="result">....</p>
+<div id="result"></div>
 </div>
 
 </div>
@@ -84,7 +84,7 @@ btn_table.addEventListener('click', ()=>{
 /*result.innerHTML = num.value;*/
 
 for(let i=0; i=<9; i++){
-result.innerHTML = mult=num.value*i;
+result.innerHTML += `<p> ${num} * ${i} = ${mult=num.value*i} </p>`;
 }
 
 });
