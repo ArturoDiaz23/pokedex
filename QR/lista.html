@@ -40,6 +40,7 @@
 <h3>Tablas de multiplicar</h3>
 <input type="number" id="num_table">
 <button id="btn_table" class=" btn btn-primary">Imprimir </button>
+<p id="msn"></p>
 <div id="result"></div>
 </div>
 
@@ -78,14 +79,17 @@ navigator.clipboard.writeText(texto.innerText);
 const num = document.getElementById("num_table");
 const btn_table = document.getElementById("btn_table");
 const result = document.getElementById("result");
+const msn = document.getElementById("msn");
 
 btn_table.addEventListener('click', ()=>{
 result.innerHTML = "";
-
-for(let i=1; i<=10; i++){
+if(num.value===0){
+msn.innerText="Ingrese un número para la tabla"
+}
+else{for(let i=1; i<=10; i++){
 result.innerHTML += `<p>${num.value} * ${i} = ${num.value*i} </p>`;
 }
-
+}
 });
 
 /*
