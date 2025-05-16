@@ -82,13 +82,14 @@ const result = document.getElementById("result");
 const msn = document.getElementById("msn");
 
 btn_table.addEventListener('click', ()=>{
-result.innerHTML = "";
+result.innerText = "";
 if(num.value===0){
 msn.innerText="Ingrese un número para la tabla"
 }
 else{for(let i=1; i<=10; i++){
 result.innerHTML += `<p>${num.value} * ${i} = ${num.value*i} </p>`;
 }
+msn.innerText="";
 }
 });
 
